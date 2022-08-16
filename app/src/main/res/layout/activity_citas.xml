@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subtitleTextColor="@android:color/background_light"
+            app:title="Hospital del celular"
+            app:titleTextColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Citas"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lblTitulo"></TextView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="567dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="230dp"
+                android:text="Regresar"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
